@@ -61,7 +61,7 @@
               </p>
               <img
                 class="img-fluid mt-1"
-                src="images/laurel-1.png"
+                src="images/logo.png"
                 alt="Heart"
                 data-aos="zoom-in-down"
                 data-aos-delay="300"
@@ -125,7 +125,9 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link smooth-scroll" href="#rsvp">RSVP</a>
+                    <a class="nav-link smooth-scroll" href="#rsvp"
+                      ><strong>RSVP</strong></a
+                    >
                   </li>
                 </ul>
               </div>
@@ -155,10 +157,11 @@
                   <p class="pt-3 text-left text-muted">
                     <strong>Favorite place in Maui: </strong>Sugar Beach
                     (Kihei)<br />
-                    <strong>Can't wait to (other than getting married):</strong>
-                    Sharing her favorite places in Maui with friends. <br />
+                    <strong>Can't wait to (other than get married):</strong>
+                    Share the scenic drives around Maui.
+                    <br />
                     <strong>Favorite thing about Chad:</strong> He finds joy in
-                    the little things which helps me appreciate life more.
+                    the little things which helps her appreciate life more.
                   </p>
                 </div>
               </div>
@@ -175,8 +178,8 @@
                   <p class="pt-3 text-left text-muted">
                     <strong>Favorite place in Maui:</strong> Baldwin Beach
                     (Paia)<br />
-                    <strong>Can't wait to (other than getting married):</strong>
-                    Crab mac salad, grilling with friends and family.<br />
+                    <strong>Can't wait to (other than get married):</strong>
+                    Eat crab mac salad & grill with friends and family.<br />
                     <strong>Favorite thing about Jane:</strong> She puts so much
                     love and care into everything she does.
                   </p>
@@ -214,8 +217,10 @@
                   </ul>
                   <p>
                     We are delighted that the majority of guests will be staying
-                    in one place!
-                    <br />
+                    at
+                    <a target="_blank" href="http://www.villasbythecove.com/"
+                      >Villas by the Cove</a
+                    >. <br />
                     Conveniently, the welcome dinner will be held on site. The
                     plan is to swim, eat, and drink while getting to know
                     eachother before the big day.
@@ -259,9 +264,9 @@
                     and return at the end of the evening. Plan to be ready for
                     pickup between 12-1:30pm (exact time will be arranged
                     individually) and return by 9PM. <br /><br />
-                    Transportation is provided for convenience and safety along
-                    with the venue's policy as the surrounding roads are winding
-                    and dimly lit.
+                    Transportation is provided for convenience and safety in
+                    accordance to the venue's policy as the surrounding roads
+                    are winding and dimly lit.
                   </p>
                 </div>
               </div>
@@ -404,28 +409,15 @@
                 </div>
               </div>
             </div>
+            <div class="col text-center mt-3">
+              <button class="btn btn-primary btn-submit">
+                <strong>Full Itinerary, Tickets & Events RSVP</strong>
+              </button>
+              <br /><span style="font-size:12px">*Wedding RSVP form below</span>
+            </div>
           </div>
         </div>
-        <div class="ww-section" id="gallery">
-          <hr />
-          <a
-            class="zola-registry-embed"
-            href="www.zola.com/registry/janeandchad2020"
-            data-registry-key="janeandchad2020"
-            >Our Zola Wedding Registry</a
-          ><script>
-            !(function(e, t, n) {
-              var s,
-                a = e.getElementsByTagName(t)[0];
-              e.getElementById(n) ||
-                ((s = e.createElement(t)),
-                (s.id = n),
-                (s.async = !0),
-                (s.src = "https://widget.zola.com/js/widget.js"),
-                a.parentNode.insertBefore(s, a));
-            })(document, "script", "zola-wjs");
-          </script>
-        </div>
+
         <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
           <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="col text-center">
@@ -447,6 +439,11 @@
                     <div class="row">
                       <div class="col md-6 pb-3">
                         <div class="form-group">
+                          <input
+                            type="text"
+                            name="_gotcha"
+                            style="display:none"
+                          />
                           <label for="name-input">Your Name*</label>
                           <input
                             class="form-control"
@@ -499,7 +496,22 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col">
+                      <div class="col-md-6 pb-3">
+                        <div class="form-group">
+                          <label for="entree-input">Entree Selection*</label>
+                          <select
+                            class="form-control"
+                            id="entree-input"
+                            name="entree"
+                          >
+                            <option value="beef">Braised Short Rib</option>
+                            <option value="fish"
+                              >Herb Roasted Catch of the Day</option
+                            >
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6 pb-3">
                         <div class="form-group">
                           <label for="diet-input"
                             >Please list any dietary restrictions and
@@ -509,7 +521,7 @@
                             class="form-control"
                             id="diet-input"
                             name="diet"
-                            rows="2"
+                            rows="1"
                           ></textarea>
                         </div>
                       </div>
@@ -545,6 +557,27 @@
             </div>
           </div>
         </div>
+
+        <div class="ww-section" id="gallery">
+          <a
+            class="zola-registry-embed"
+            href="www.zola.com/registry/janeandchad2020"
+            data-registry-key="janeandchad2020"
+            >Our Zola Wedding Registry</a
+          ><script>
+            !(function(e, t, n) {
+              var s,
+                a = e.getElementsByTagName(t)[0];
+              e.getElementById(n) ||
+                ((s = e.createElement(t)),
+                (s.id = n),
+                (s.async = !0),
+                (s.src = "https://widget.zola.com/js/widget.js"),
+                a.parentNode.insertBefore(s, a));
+            })(document, "script", "zola-wjs");
+          </script>
+        </div>
+
         <div class="ww-footer bg-light">
           <div class="container text-center py-4">
             <p class="my-0">&copy; Jane Kim. All rights reserved.</p>
