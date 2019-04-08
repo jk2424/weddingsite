@@ -80,10 +80,10 @@ function filterItems(filter) {
       }
     }
     // hide everything first
-    card.fadeOut(400);
+    card.fadeOut(300);
     setTimeout(function() {
       if (show && !card.is(":visible")) {
-        card.fadeIn(400);
+        card.fadeIn(300);
       }
     }, 500);
   });
