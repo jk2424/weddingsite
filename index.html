@@ -453,11 +453,13 @@
               </div>
             </div>
             <div class="col text-center mt-3">
-              <a href="https://marriedinmaui2020.paperform.co" target="_blank">
-                <button class="btn btn-primary btn-submit">
-                  <strong>Full Itinerary, Tickets & Events RSVP</strong>
-                </button>
-              </a>
+              <button
+                class="btn btn-primary btn-submit"
+                data-paperform-id="marriedinmaui2020"
+                data-popup-button="1"
+              >
+                <strong>Full Itinerary, Tickets & Events RSVP</strong>
+              </button>
               <br /><span style="font-size:12px">*Wedding RSVP form below</span>
             </div>
           </div>
@@ -638,5 +640,12 @@
     <script src="js/ekko-lightbox.min.js"></script>
     <script src="scripts/main.js"></script>
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script>
+      (function() {
+        var script = document.createElement("script");
+        script.src = "https://paperform.co/__embed";
+        document.body.appendChild(script);
+      })();
+    </script>
   </body>
 </html>
