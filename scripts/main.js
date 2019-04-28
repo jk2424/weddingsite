@@ -85,7 +85,7 @@ function filterItems(filter) {
       if (show && !card.is(":visible")) {
         card.fadeIn(300);
       }
-    }, 500);
+    }, 200);
   });
 }
 
