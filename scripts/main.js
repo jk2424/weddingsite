@@ -45,20 +45,7 @@ $("a.smooth-scroll").click(function(event) {
 });
 
 // Photo Filter
-var activeFilter = "all";
 
-$(".ww-filter-button").on("click", function(e) {
-  // remove btn-primary from all buttons first
-  $(".ww-filter-button").removeClass("btn-primary");
-  $(".ww-filter-button").addClass("btn-outline-primary");
-
-  // add btn-primary to active button
-  var button = $(this);
-  button.removeClass("btn-outline-primary");
-  button.addClass("btn-primary");
-  filterItems(button.data("filter"));
-  e.preventDefault();
-});
 
 function filterItems(filter) {
   if (filter === activeFilter) {
@@ -80,12 +67,12 @@ function filterItems(filter) {
       }
     }
     // hide everything first
-    card.fadeOut(300);
+    card.fadeOut(100);
     setTimeout(function() {
       if (show && !card.is(":visible")) {
-        card.fadeIn(300);
+        card.fadeIn(200);
       }
-    }, 200);
+    },100;
   });
 }
 
