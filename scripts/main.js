@@ -46,7 +46,6 @@ $("a.smooth-scroll").click(function(event) {
 
 // Photo Filter
 
-
 function filterItems(filter) {
   if (filter === activeFilter) {
     return;
@@ -72,7 +71,7 @@ function filterItems(filter) {
       if (show && !card.is(":visible")) {
         card.fadeIn(200);
       }
-    },100;
+    }, 100);
   });
 }
 
